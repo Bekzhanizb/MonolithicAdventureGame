@@ -14,8 +14,6 @@ public class Main {
     }
 }
 
-
-
 class MonolithicAdventureGame {
     private Player player;
     private LevelManager levelManager;
