@@ -11,8 +11,7 @@ public class HealthElixir implements Item{
     }
     @Override
     public void use(Player player) {
-        int Health = player.getPlayerHealth() + getHealth();
-        player.setPlayerHealth(Math.min(Health, 100));
+        player.setPlayerHealth(Math.min(player.getPlayerHealth() + getHealth(), 100));
         manager.removeItem(player, getClass().getSimpleName());
         System.out.println("You used the health elixir: " + player.getPlayerHealth());
     }

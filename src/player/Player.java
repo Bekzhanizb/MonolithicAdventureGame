@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
-    private String playerName;
+    private final String playerName;
     private int playerHealth;
     private int playerExperience;
     private List<String> inventory;
@@ -12,7 +12,7 @@ public class Player {
         this.playerName = "Adventurer";
         this.playerHealth = 100;
         this.playerExperience = 0;
-        this.inventory = new ArrayList<String>();
+        this.inventory = new ArrayList<>();
     }
 
     public String getPlayerName() {
